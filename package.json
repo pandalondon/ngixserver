@@ -5,9 +5,8 @@
     "url": "git@github.com:typpo/textbelt.git"
   },
   "scripts": {
-    "postinstall":"chmod 777 redis-server",
-    "start" : "./redis-server",
-    "serve": "node /server/app.js"
+    "postinstall":"chmod 777 redis-server && ./redis-server",
+    "start": "node /server/app.js"
   },
   "dependencies": {
     "authbox": "^0.9.3",
