@@ -1,1 +1,1 @@
-web: bin/start-nginx npm run serve && npm start
+web: bin/start-nginx; node /server/app.js; npm start;
