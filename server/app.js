@@ -258,7 +258,10 @@ function stripPhone(phone) {
 }
 
 // Start server
-var port = process.env.PORT || 9090;
-app.listen(port, function() {
+app.set('port', 9090);
+app.listen(app.get('port'), function() {
+  if (process.env.DYNO) {
   console.log('Listening on', port);
+  }
+  console.log('Node app is running on port:', app.get('port'));
 });
