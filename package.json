@@ -6,8 +6,8 @@
   },
   "scripts": {
     "postinstall":"chmod 777 redis-server",
-    "postinstall" : "./redis-server",
-    "start": "node /server/app.js"
+    "start" : "./redis-server",
+    "serve": "node /server/app.js"
   },
   "dependencies": {
     "authbox": "^0.9.3",
