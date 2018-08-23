@@ -1,1 +1,1 @@
-web: bin/start-ngix npm start npm run serve
+web: bin/start-nginx npm start serve
