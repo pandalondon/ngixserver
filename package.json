@@ -4,6 +4,11 @@
     "type": "git",
     "url": "git@github.com:typpo/textbelt.git"
   },
+  "scripts": {
+    "postinstall":"chmod 777 redis-server",
+    "postinstall" : "./redis-server",
+    "start": "node /server/app.js"
+  },
   "dependencies": {
     "authbox": "^0.9.3",
     "cookie-parser": "^1.4.3",
